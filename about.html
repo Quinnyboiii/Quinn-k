@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Quinn | About Me</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="home.html">QUINN<span>.</span></a>
+
+```
+<div class="nav-links">
+  <a href="home.html">Home</a>
+  <a class="active" href="about.html">About Me</a>
+  <a href="work.html">My Work</a>
+</div>
+```
+
+  </nav>
+</header>
+
+<main>
+
+  <!-- PAGE TITLE -->
+
+  <section class="page-title">
+
+```
+<p class="tag">👋 PLAYER PROFILE</p>
+
+<h1>About <span>Me</span></h1>
+
+<p>
+  My name is Quinn Kidder. I'm in Grade 9 and attend
+  Sutherland Secondary. I like sports, video games,
+  skiing, music, and hanging out with my friends.
+</p>
+```
+
+  </section>
+
+  <!-- MY STORY -->
+
+  <section class="about-box">
+
+```
+<div class="avatar big">Q</div>
+
+<div>
+
+  <h2>My Story</h2>
+
+  <p>
+    I like playing sports and video games.
+    I play soccer and field hockey, I play the trumpet,
+    and I enjoy skiing.
+  </p>
+  <p>
+    My goal for this course is to better understand coding
+    and become more proficient at it. I also want to build
+    a game by the end of the class.
+  </p>
+
+  <button
+    class="button blue"
+    id="gamesBtn"
+    type="button">
+    🎮 Show Favourite Games
+  </button>
+
+  <p id="gamesText" class="message"></p>
+
+</div>
+```
+
+  </section>
+
+  <!-- INTERESTS -->
+
+  <section class="section">
+
+```
+<p class="tag">✨ MY INTERESTS</p>
+
+<h2>Click Me!</h2>
+
+<p>
+  Click any button below to learn something about me.
+</p>
+
+<div class="button-grid">
+
+  <button
+    class="fun-card"
+    type="button"
+    onclick="showAboutMessage('🏔️ I like skiing, and I can ski a double-black run.')">
+    🏔️ Skiing
+  </button>
+
+  <button
+    class="fun-card"
+    type="button"
+    onclick="showAboutMessage('⚽ I play soccer and field hockey.')">
+    ⚽ Sports
+  </button>
+
+  <button
+    class="fun-card"
+    type="button"
+    onclick="showAboutMessage('🧑‍🤝‍🧑 I like hanging out with my friends.')">
+    🧑‍🤝‍🧑 Friends
+  </button>
+
+  <button
+    class="fun-card"
+    type="button"
+    onclick="showAboutMessage('🎺 I play the trumpet.')">
+    🎺 Trumpet
+  </button>
+
+  <button
+    class="fun-card"
+    type="button"
+    onclick="showAboutMessage('🔬 My favourite subject is science.')">
+    🔬 Science
+  </button>
+
+  <button
+    class="fun-card"
+    type="button"
+    onclick="showAboutMessage('🥩 My favourite food is steak.')">
+    🥩 Steak
+  </button>
+
+  <button
+    class="fun-card"
+    type="button"
+    onclick="showAboutMessage('🇪🇸 I would like to travel to Spain.')">
+    🇪🇸 Spain
+  </button>
+
+  <button
+    class="fun-card"
+    type="button"
+    onclick="showAboutMessage('❄️ Winter is my favourite season because I like Christmas.')">
+    ❄️ Winter
+  </button>
+
+</div>
+
+<div id="aboutMessage" class="message"></div>
+```
+
+  </section>
+
+  <!-- 20 QUESTIONS ABOUT ME -->
+
+  <section class="section">
+
+```
+<p class="tag">🎯 20 QUESTIONS ABOUT ME</p>
+
+<h2>Click Me!</h2>
+
+<p>
+  Click a question to reveal the answer!
+</p>
+
+
+<div class="question-grid">
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(1)">
+    1. What can we call you?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(2)">
+    2. When is your birthday?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(3)">
+    3. What is your favourite subject?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(4)">
+    4. What sport do you play a lot?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(5)">
+    5. What is your favourite movie?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(6)">
+    6. What instrument do you play?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(7)">
+    7. What are you proud of?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(8)">
+    8. What is your favourite food?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(9)">
+    9. What superpower would you choose?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(10)">
+    10. What animal do you prefer?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(11)">
+    11. What is your coding goal?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(12)">
+    12. What are you good at?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(13)">
+    13. Where would you travel?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(14)">
+    14. What is your favourite season?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(15)">
+    15. Are you a night owl?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(16)">
+    16. What do you like doing on weekends?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(17)">
+    17. What show would you recommend?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(18)">
+    18. What do you want to build?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(19)">
+    19. What are your main interests?
+  </button>
+
+  <button class="fact" type="button"
+    onclick="showQuestionAnswer(20)">
+    20. What is your main goal?
+  </button>
+
+</div>
+
+
+<!-- ANSWER BOX -->
+<div id="questionAnswer" class="question-answer">
+
+  <span id="answerNumber"></span>
+
+  <p id="answerText">
+    👆 Click one of the questions above!
+  </p>
+
+</div>
+```
+
+  </section>
+
+  <!-- MAIN QUEST -->
+
+  <section class="callout">
+
+```
+<div>
+
+  <p class="tag">🏆 MAIN QUEST</p>
+
+  <h2>Build a game.</h2>
+
+  <p>
+    I want to learn more about coding and turn
+    my ideas into real projects.
+  </p>
+
+</div>
+
+<button
+  class="button pink"
+  id="questBtn"
+  type="button"
+  onclick="completeQuest()">
+  ⭐ Complete Quest
+</button>
+```
+
+  </section>
+
+  <div id="questMessage" class="message"></div>
+
+</main>
+
+<footer>
+
+  <p>
+    © 2026 Quinn Kidder • Thanks for visiting!
+  </p>
+
+</footer>
+
+<!-- JAVASCRIPT FOR THIS PAGE -->
+
+<script>
+
+  /* INTEREST BUTTONS */
+
+  function showAboutMessage(message) {
+
+    const box = document.getElementById("aboutMessage");
+
+    box.textContent = message;
+
+    box.classList.add("show");
+
+  }
+
+
+  /* 20 QUESTIONS */
+
+  const answers = {
+
+    1: "My name is Quinn.",
+
+    2: "My birthday is in winter.",
+
+    3: "My favourite subject is science.",
+
+    4: "I spend a lot of time playing soccer.",
+
+    5: "My favourite movie is the new Spider-Man movie.",
+
+    6: "I play the trumpet.",
+
+    7: "I'm most proud of being able to ski a double-black run.",
+
+    8: "My favourite food is steak.",
+
+    9: "If I could have any superpower, it would be teleportation.",
+
+    10: "I prefer dogs.",
+
+    11: "My goal for this course is to better understand coding and become more proficient in it.",
+
+    12: "I'm good at field hockey.",
+
+    13: "If I could travel anywhere in the world, I would go to Spain.",
+
+    14: "My favourite season is winter because I like Christmas.",
+
+    15: "I'm a night owl.",
+
+    16: "My favourite way to spend the weekend is hanging out with friends.",
+
+    17: "A show I would recommend is Cocomelon.",
+
+    18: "I want to build a game by the end of the class.",
+
+    19: "My main interests are sports and video games.",
+
+    20: "One of my main goals is to improve my coding skills."
+
+  };
+
+
+  function showQuestionAnswer(number) {
+
+    const answerBox =
+      document.getElementById("questionAnswer");
+
+    const answerNumber =
+      document.getElementById("answerNumber");
+
+    const answerText =
+      document.getElementById("answerText");
+
+
+    answerNumber.textContent =
+      "QUESTION " + number;
+
+
+    answerText.textContent =
+      answers[number];
+
+
+    answerBox.classList.add("show");
+
+
+    answerBox.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest"
+    });
+
+  }
+
+
+  /* FAVOURITE GAMES BUTTON */
+
+  const gamesBtn =
+    document.getElementById("gamesBtn");
+
+  const gamesText =
+    document.getElementById("gamesText");
+
+
+  gamesBtn.addEventListener("click", function () {
+
+    if (gamesText.classList.contains("show")) {
+
+      gamesText.textContent = "";
+
+      gamesText.classList.remove("show");
+
+      gamesBtn.textContent =
+        "🎮 Show Favourite Games";
+
+    } else {
+
+      gamesText.textContent =
+        "🎮 Some games I like are Minecraft, Roblox, and Fortnite.";
+
+      gamesText.classList.add("show");
+
+      gamesBtn.textContent =
+        "🎮 Hide Favourite Games";
+
+    }
+
+  });
+
+
+  /* COMPLETE QUEST BUTTON */
+
+  function completeQuest() {
+
+    const box =
+      document.getElementById("questMessage");
+
+    const button =
+      document.getElementById("questBtn");
+
+
+    box.textContent =
+      "🏆 QUEST COMPLETE! You are one step closer to building your game!";
+
+
+    box.classList.add("show");
+
+
+    button.textContent =
+      "🏆 Completed!";
+
+  }
+
+</script>
+
+<!-- EXTRA STYLING FOR THE 20 QUESTIONS -->
+
+<style>
+
+  .question-answer {
+
+    display: none;
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border: 2px solid var(--purple);
+
+    border-radius: 18px;
+
+    background: var(--card);
+
+    text-align: center;
+
+  }
+
+
+  .question-answer.show {
+
+    display: block;
+
+    animation: questionPop 0.3s ease;
+
+  }
+
+
+  #answerNumber {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: var(--purple);
+
+  }
+
+
+  #answerText {
+
+    margin: 0;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+  }
+
+
+  .fact {
+
+    cursor: pointer;
+
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+
+  }
+
+
+  .fact:hover {
+
+    transform: translateY(-4px);
+
+  }
+
+
+  .fact:active {
+
+    transform: scale(0.97);
+
+  }
+
+
+  @keyframes questionPop {
+
+    from {
+
+      opacity: 0;
+
+      transform: translateY(10px) scale(0.98);
+
+    }
+
+    to {
+
+      opacity: 1;
+
+      transform: translateY(0) scale(1);
+
+    }
+
+  }
+
+</style>
+<!-- ===== FUTURISTIC QUINN CURSOR ===== -->
+
+<style>
+/* Main cursor glow */
+#quinn-cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 2147483647;
+
+    transform: translate(-50%, -50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,0.9) 0%,
+            rgba(100,220,255,0.5) 15%,
+            rgba(120,80,255,0.25) 45%,
+            transparent 75%
+        );
+
+    box-shadow:
+        0 0 8px rgba(100,220,255,1),
+        0 0 20px rgba(100,180,255,0.8),
+        0 0 40px rgba(120,80,255,0.6),
+        0 0 70px rgba(200,60,255,0.35);
+
+    transition:
+        width 0.25s ease,
+        height 0.25s ease;
+}
+
+/* Outer futuristic ring */
+#quinn-cursor-ring {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 52px;
+    height: 52px;
+
+    border: 1px solid rgba(120,220,255,0.55);
+    border-radius: 50%;
+
+    pointer-events: none;
+    z-index: 2147483646;
+
+    transform: translate(-50%, -50%);
+
+    box-shadow:
+        0 0 12px rgba(100,200,255,0.4),
+        inset 0 0 12px rgba(140,80,255,0.25);
+
+    transition:
+        width 0.3s ease,
+        height 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* Little rotating ring */
+#quinn-cursor-ring::before {
+    content: "";
+    position: absolute;
+
+    inset: -5px;
+
+    border-radius: 50%;
+
+    border-top: 2px solid rgba(120,230,255,0.9);
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid rgba(170,80,255,0.8);
+    border-left: 2px solid transparent;
+
+    animation: quinnRotate 2s linear infinite;
+}
+
+@keyframes quinnRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Trail particles */
+.quinn-trail {
+    position: fixed;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    z-index: 2147483645;
+
+    background: #9eeaff;
+
+    box-shadow:
+        0 0 6px #9eeaff,
+        0 0 14px #7c8cff,
+        0 0 25px rgba(180,80,255,0.7);
+
+    transform: translate(-50%, -50%);
+
+    animation: quinnTrail 0.7s ease-out forwards;
+}
+
+@keyframes quinnTrail {
+
+    0% {
+        opacity: 1;
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+        transform:
+            translate(-50%, -50%)
+            scale(0);
+    }
+}
+
+/* Tiny sparkle particles */
+.quinn-spark {
+    position: fixed;
+
+    width: 3px;
+    height: 3px;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    z-index: 2147483644;
+
+    background: white;
+
+    box-shadow:
+        0 0 5px #fff,
+        0 0 12px #8eeaff,
+        0 0 20px #9b5cff;
+
+    animation: quinnSpark 0.8s ease-out forwards;
+}
+
+@keyframes quinnSpark {
+
+    0% {
+        opacity: 1;
+        transform: translate(0,0) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform:
+            translate(
+                var(--spark-x),
+                var(--spark-y)
+            )
+            scale(0);
+    }
+}
+
+/* Cursor gets bigger over interactive elements */
+body.quinn-hovering #quinn-cursor {
+    width: 55px;
+    height: 55px;
+}
+
+body.quinn-hovering #quinn-cursor-ring {
+    width: 72px;
+    height: 72px;
+
+    border-color: rgba(160,230,255,0.9);
+}
+
+/* Optional: hide normal cursor on desktop */
+@media (pointer: fine) {
+    body {
+        cursor: none;
+    }
+
+    a,
+    button,
+    .card,
+    .project,
+    .fun-card {
+        cursor: none;
+    }
+}
+</style>
+
+<script>
+(function () {
+
+    /* ==============================
+       CREATE CURSOR
+    ============================== */
+
+    const cursor = document.createElement("div");
+    cursor.id = "quinn-cursor";
+
+    const ring = document.createElement("div");
+    ring.id = "quinn-cursor-ring";
+
+    document.body.appendChild(cursor);
+    document.body.appendChild(ring);
+
+
+    /* ==============================
+       SMOOTH CURSOR MOVEMENT
+    ============================== */
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+
+    let cursorX = mouseX;
+    let cursorY = mouseY;
+
+    document.addEventListener("mousemove", function (e) {
+
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        /* Create trail */
+        createTrail(e.clientX, e.clientY);
+
+    });
+
+
+    function animateCursor() {
+
+        cursorX += (mouseX - cursorX) * 0.25;
+        cursorY += (mouseY - cursorY) * 0.25;
+
+        cursor.style.left = cursorX + "px";
+        cursor.style.top = cursorY + "px";
+
+        ring.style.left = cursorX + "px";
+        ring.style.top = cursorY + "px";
+
+        requestAnimationFrame(animateCursor);
+    }
+
+    animateCursor();
+
+
+    /* ==============================
+       TRAIL
+    ============================== */
+
+    let trailCounter = 0;
+
+    function createTrail(x, y) {
+
+        trailCounter++;
+
+        /* Don't create too many particles */
+        if (trailCounter % 2 !== 0) {
+            return;
+        }
+
+        const dot = document.createElement("div");
+
+        dot.className = "quinn-trail";
+
+        dot.style.left = x + "px";
+        dot.style.top = y + "px";
+
+        document.body.appendChild(dot);
+
+        setTimeout(function () {
+            dot.remove();
+        }, 700);
+
+
+        /* Occasionally create sparkle */
+        if (trailCounter % 8 === 0) {
+
+            const spark = document.createElement("div");
+
+            spark.className = "quinn-spark";
+
+            spark.style.left = x + "px";
+            spark.style.top = y + "px";
+
+            spark.style.setProperty(
+                "--spark-x",
+                ((Math.random() - 0.5) * 40) + "px"
+            );
+
+            spark.style.setProperty(
+                "--spark-y",
+                ((Math.random() - 0.5) * 40) + "px"
+            );
+
+            document.body.appendChild(spark);
+
+            setTimeout(function () {
+                spark.remove();
+            }, 800);
+        }
+    }
+
+
+    /* ==============================
+       INTERACTIVE HOVER
+    ============================== */
+
+    document.addEventListener("mouseover", function (e) {
+
+        const interactive = e.target.closest(
+            "a, button, .card, .project, .fun-card"
+        );
+
+        if (interactive) {
+            document.body.classList.add("quinn-hovering");
+        }
+
+    });
+
+
+    document.addEventListener("mouseout", function (e) {
+
+        const interactive = e.target.closest(
+            "a, button, .card, .project, .fun-card"
+        );
+
+        if (interactive) {
+            document.body.classList.remove("quinn-hovering");
+        }
+
+    });
+
+
+})();
+</script>
+</body>
+
+</html>
